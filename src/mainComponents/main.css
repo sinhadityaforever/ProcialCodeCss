@@ -1,0 +1,129 @@
+.mainDiv {
+  position: relative;
+}
+
+.circle-big {
+  height: 180px;
+  width: 180px;
+  padding: 21px;
+  border-radius: 50% 50%;
+  background-color: black;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 90vh;
+  left: 40vw;
+
+  margin: -15px;
+}
+
+.one {
+  background-color: red;
+}
+
+.pOne {
+  transform: rotate(-30deg) translate(20rem);
+}
+
+.two {
+  background-color: yellow;
+}
+.pTwo {
+  transform: rotate(-60deg) translate(20rem);
+}
+
+.three {
+  background-color: pink;
+}
+.pThree {
+  transform: rotate(-90deg) translate(20rem);
+}
+
+.four {
+  background-color: green;
+}
+.pFour {
+  transform: rotate(-120deg) translate(20rem);
+}
+
+.five {
+  background-color: blue;
+}
+.pFive {
+  transform: rotate(-150deg) translate(20rem);
+}
+
+.five-to-four {
+  animation-name: five-to-four;
+  animation-duration: 5s;
+}
+
+.four-to-three {
+  animation-name: four-to-three;
+  animation-duration: 5s;
+}
+
+.three-to-two {
+  animation-name: three-to-two;
+  animation-duration: 5s;
+}
+.two-to-one {
+  animation-name: two-to-one;
+  animation-duration: 5s;
+}
+.one-to-five {
+  animation-name: one-to-five;
+  animation-duration: 5s;
+}
+@keyframes one-to-five {
+  0% {
+    transform: rotate(-30deg) translate(20rem);
+  }
+  50% {
+    transform: rotate(90deg);
+    opacity: 0%;
+  }
+  100% {
+    transform: rotate(-150deg) translate(20rem);
+  }
+}
+
+@keyframes two-to-one {
+  from {
+    transform: rotate(-60deg) translate(20rem);
+  }
+  to {
+    transform: rotate(-30deg) translate(20rem);
+  }
+}
+@keyframes three-to-two {
+  from {
+    transform: rotate(-90deg) translate(20rem);
+  }
+  to {
+    transform: rotate(-60deg) translate(20rem);
+  }
+}
+@keyframes four-to-three {
+  from {
+    transform: rotate(-120deg) translate(20rem);
+  }
+  to {
+    transform: rotate(-90deg) translate(20rem);
+  }
+}
+@keyframes five-to-four {
+  from {
+    transform: rotate(-150deg) translate(20rem);
+  }
+  to {
+    transform: rotate(-120deg) translate(20rem);
+  }
+}
