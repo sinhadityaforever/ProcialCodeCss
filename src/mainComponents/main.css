@@ -2,13 +2,13 @@
   position: relative;
 }
 
-.circle-big {
+/* .circle-big {
   height: 180px;
   width: 180px;
-  padding: 21px;
+
   border-radius: 50% 50%;
   background-color: black;
-}
+} */
 
 .circle {
   border-radius: 50%;
@@ -20,12 +20,12 @@
   overflow: hidden;
   top: 90vh;
   left: 40vw;
-
-  margin: -15px;
+  margin: 10px;
 }
 
 .one {
   background-color: red;
+  margin: 3rem;
 }
 
 .pOne {
@@ -34,6 +34,7 @@
 
 .two {
   background-color: yellow;
+  margin: 3rem;
 }
 .pTwo {
   transform: rotate(-60deg) translate(20rem);
@@ -41,13 +42,18 @@
 
 .three {
   background-color: pink;
+  margin: 3rem;
 }
 .pThree {
-  transform: rotate(-90deg) translate(20rem);
+  transform: rotate(-90deg) translate(20rem) translateX(7rem)
+    translateY(-1.2rem);
+  width: 12rem;
+  height: 12rem;
 }
 
 .four {
   background-color: green;
+  margin: 3rem;
 }
 .pFour {
   transform: rotate(-120deg) translate(20rem);
@@ -55,6 +61,7 @@
 
 .five {
   background-color: blue;
+  margin: 3rem;
 }
 .pFive {
   transform: rotate(-150deg) translate(20rem);
@@ -62,36 +69,36 @@
 
 .five-to-four {
   animation-name: five-to-four;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 .four-to-three {
   animation-name: four-to-three;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 .three-to-two {
   animation-name: three-to-two;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 .two-to-one {
   animation-name: two-to-one;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 .one-to-five {
   animation-name: one-to-five;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 @keyframes one-to-five {
   0% {
     transform: rotate(-30deg) translate(20rem);
   }
-  50% {
-    transform: rotate(90deg);
-    opacity: 0%;
+  20% {
+    opacity: 0;
   }
+
   100% {
-    transform: rotate(-150deg) translate(20rem);
+    transform: rotate(210deg) translate(20rem);
   }
 }
 
@@ -105,10 +112,15 @@
 }
 @keyframes three-to-two {
   from {
-    transform: rotate(-90deg) translate(20rem);
+    transform: rotate(-90deg) translate(20rem) translateX(7rem)
+      translateY(-1.2rem);
+    width: 12rem;
+    height: 12rem;
   }
   to {
     transform: rotate(-60deg) translate(20rem);
+    width: 10rem;
+    height: 10rem;
   }
 }
 @keyframes four-to-three {
@@ -116,7 +128,10 @@
     transform: rotate(-120deg) translate(20rem);
   }
   to {
-    transform: rotate(-90deg) translate(20rem);
+    transform: rotate(-90deg) translate(20rem) translateX(7rem)
+      translateY(-1.2rem);
+    width: 12rem;
+    height: 12rem;
   }
 }
 @keyframes five-to-four {

@@ -71,7 +71,7 @@ const Main = () => {
       let last = newArr.pop();
       newArr.unshift(last);
       setPositions(newArr);
-    }, 5000);
+    }, 3000);
   };
 
   // const afterAnimation = () => {
